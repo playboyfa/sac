@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.sac.user.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.yang.sac.user.domain.User">
+    <id column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_nick" jdbcType="VARCHAR" property="userNick" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="weixin" jdbcType="VARCHAR" property="weixin" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  
+  <sql id="Base_Column_List">
+    user_id, user_name, user_nick, user_password, phone, email, qq, weixin, create_time, 
+    update_time
+  </sql>
+  
+  <select id="selectByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	<![CDATA[
+  		select * from t_sac_user where user_name = #{userName,jdbcType=VARCHAR}
+    ]]>
+  </select>
+</mapper>

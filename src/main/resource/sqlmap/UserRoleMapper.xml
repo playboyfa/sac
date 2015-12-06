@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.sac.user.dao.UserRoleMapper">
+  <resultMap id="BaseResultMap" type="com.yang.sac.user.domain.UserRole">
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="role_id" jdbcType="BIGINT" property="roleId" />
+  </resultMap>
+  
+  <select id="selectUserRoleByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	<![CDATA[
+  	select * from  t_sac_user_role t2 where t2.user_id in (select t1.user_id from t_sac_user t1
+  			 where t1.user_name = #{userName,jdbcType=VARCHAR});		
+    ]]>
+  </select>
+</mapper>

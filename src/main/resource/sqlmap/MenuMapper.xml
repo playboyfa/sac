@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.sac.user.dao.MenuMapper">
+  <resultMap id="BaseResultMap" type="com.yang.sac.user.domain.Menu">
+    <id column="menu_id" jdbcType="BIGINT" property="menuId" />
+    <result column="menu_parent_id" jdbcType="BIGINT" property="menuParentId" />
+    <result column="menu_name" jdbcType="VARCHAR" property="menuName" />
+    <result column="menu_icon" jdbcType="VARCHAR" property="menuIcon" />
+    <result column="menu_desc" jdbcType="VARCHAR" property="menuDesc" />
+    <result column="action_address" jdbcType="VARCHAR" property="actionAddress" />
+    <result column="action_type" jdbcType="INTEGER" property="actionType" />
+    <result column="menu_status" jdbcType="INTEGER" property="menuStatus" />
+  </resultMap>
+  <select id="selectAllMenus" resultMap="BaseResultMap">
+  	<![CDATA[
+      SELECT * from t_sac_menu 
+    ]]>
+  </select>
+   
+</mapper>

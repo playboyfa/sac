@@ -1,0 +1,143 @@
+
+/*
+ * Plugin: Social Buttons
+ * ----------------------
+ */
+.btn-social {
+  position: relative;
+  padding-left: 44px !important;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-social :first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px !important;
+  line-height: 34px !important;
+  font-size: 1.6em!important;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.btn-social.btn-lg {
+  padding-left: 61px !important;
+}
+.btn-social.btn-lg :first-child {
+  line-height: 45px;
+  width: 45px;
+  font-size: 1.8em;
+}
+.btn-social.btn-sm {
+  padding-left: 38px !important;
+}
+.btn-social.btn-sm :first-child {
+  line-height: 28px;
+  width: 28px;
+  font-size: 1.4em;
+}
+.btn-social.btn-xs {
+  padding-left: 30px !important;
+}
+.btn-social.btn-xs :first-child {
+  line-height: 20px;
+  width: 20px;
+  font-size: 1.2em;
+}
+.btn-social-icon {
+  position: relative;
+  padding-left: 44px !important;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 34px;
+  width: 34px;
+  padding: 0;
+}
+.btn-social-icon :first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px !important;
+  line-height: 34px !important;
+  font-size: 1.6em!important;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.btn-social-icon.btn-lg {
+  padding-left: 61px !important;
+}
+.btn-social-icon.btn-lg :first-child {
+  line-height: 45px;
+  width: 45px;
+  font-size: 1.8em;
+}
+.btn-social-icon.btn-sm {
+  padding-left: 38px !important;
+}
+.btn-social-icon.btn-sm :first-child {
+  line-height: 28px;
+  width: 28px;
+  font-size: 1.4em;
+}
+.btn-social-icon.btn-xs {
+  padding-left: 30px !important;
+}
+.btn-social-icon.btn-xs :first-child {
+  line-height: 20px;
+  width: 20px;
+  font-size: 1.2em;
+}
+.btn-social-icon :first-child {
+  border: none;
+  text-align: center;
+  width: 100%!important;
+}
+.btn-social-icon.btn-lg {
+  height: 45px;
+  width: 45px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-social-icon.btn-sm {
+  height: 30px;
+  width: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-social-icon.btn-xs {
+  height: 22px;
+  width: 22px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.btn-bitbucket {
+  color: #ffffff;
+  background-color: #205081;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn-bitbucket:hover,
+.btn-bitbucket:focus,
+.btn-bitbucket.focus,
+.btn-bitbucket:active,
+.btn-bitbucket.active,
+.open > .dropdown-toggle.btn-bitbucket {
+  color: #ffffff;
+  background-color: #163758;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn-bitbucket:active,
+.btn-bitbucket.active,
+.open > .dropdown-toggle.btn-bitbucket {
+  background-image: none;
+}
+.btn-bitbucket .badge {
+  color: #205081;
+  background-color: #ffffff;
+}

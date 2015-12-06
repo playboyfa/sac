@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.sac.user.dao.UserLoginMapper">
+  <resultMap id="BaseResultMap" type="com.yang.sac.user.domain.UserLogin">
+    <id column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_stat" jdbcType="INTEGER" property="userStat" />
+    <result column="user_session_id" jdbcType="VARCHAR" property="userSessionId" />
+    <result column="user_login_fail_count" jdbcType="INTEGER" property="userLoginFailCount" />
+    <result column="user_lock_flag" jdbcType="INTEGER" property="userLockFlag" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+  </resultMap>
+  
+  <select id="selectAllUserLogin" resultMap="BaseResultMap">
+  	<![CDATA[
+      SELECT * from t_sac_role
+    ]]>
+  </select>
+</mapper>
